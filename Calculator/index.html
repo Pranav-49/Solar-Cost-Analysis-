@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S3 Solar Calculator</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <a href="..\Home\index.html">
+            <div id="gap">Home</div>
+        </a>
+        <a href="..\Solar Energy\index.html">
+            <div id="gap">Solar Energy</div>
+        </a>
+        <a href="..\Calculator\index.html" id="main">
+            <div id="gap">Calculator</div>
+        </a>
+        <a href="..\Companies\index.html">
+            <div id="gap">Companies</div>
+        </a>
+    </nav>
+    <div id="container">
+        <img id="background" src="cal_background.avif" alt="Calendar Background">
+        <div id="text-overlay">
+            <h1>S3 Solar Calculator</h1>
+        </div>
+    </div>
+
+
+    <main>
+        <div id="container1">
+            <div class="data">
+                <h3 id="name">Solar Calculator</h3>
+                <div class="double_box">
+                    <h3 id="header">Please Enter the following Details</h3><br><br><br>
+                <form id="myForm">
+                    <label id="c2" for="unit"> Average Monthly Unit Consumption:</label><br><br>
+                    <input type="number" id="unit" name="unit"><br><br>
+                    <div id="userTypeGroup">
+                        <div class="form-group">
+                            <label class="incr">Please select your user type:</label>
+                            <select class="incr" name="userType" id="userType">
+                                <option value="individual">Individual households(Residential)</option>
+                                <option value="group">Group housing societies(residential)</option>
+                                <option value="commertial">Commertial user</option>
+                                <option value="industrial">Industrial user</option>
+                                <option value="agricultural">Agricultural user</option>
+                                <option value="public">Public user</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="incr">What type of solar system do you want to use ?</label>
+                        <div class="incr" class="radio-options">
+                            <label><input type="radio" name="batteries" value="yes"> Off-grid</label>
+                            <label><input type="radio" name="batteries" value="no"> On-grid</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="incr">Choose your connection type:</label>
+                        <div class="incr" class="radio-options">
+                            <label><input type="radio" name="system" value="single"> Single</label>
+                            <label><input type="radio" name="system" value="three"> Three</label>
+                        </div>
+                    </div>
+                </div>
+                
+                    <button id="submitbutton">SUBMIT</button>
+                </form>
+            </div>
+            <img id="logo" src="Sun Solar Systems.png" alt="logo">
+        </div>
+        <div id="container2">
+            <div class="same">
+                <div class="hide" id="colour1">Initial cost accordingly : <span id="span2">None</span></div>
+                <hr>
+                <div class="hide" id="colour2">Requirment of Pannel : <span id="span3">None</span></div>
+                <hr>
+                <div class="hide" id="colour4">You will get subsidy upto : <span id="span4">Not Applicable</span></div>
+                <hr>
+                <div class="hide" id="colour3">Return time on investment : <span id="span5">System in loss</span></div>
+                <hr>
+                <div class="hide" id="colour">Total savings lifetime : <span id="span1">None</span></div>
+                <hr>
+            </div>
+            <div class="same1">
+                <div class="hide" id="colour5">Number of Panels required: <span id="numberofpanels">None</span></div>
+                <div class="hide" id="colour6">Area required for the system: <span id="totalAreaOutput"></span></div>
+            </div>
+            <table class="hide" id="table">
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>Electricity Bill</th>
+                        <th>Solar Maintainance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>None</td>
+                        <td>None</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>None</td>
+                        <td>None</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>None</td>
+                        <td>None</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>None</td>
+                        <td>None</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>None</td>
+                        <td>None</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>None</td>
+                        <td>None</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>None</td>
+                        <td>None</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>None</td>
+                        <td>None</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>None</td>
+                        <td>None</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>None</td>
+                        <td>None</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>None</td>
+                        <td>None</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>None</td>
+                        <td>None</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>None</td>
+                        <td>None</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>None</td>
+                        <td>None</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>None</td>
+                        <td>None</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>None</td>
+                        <td>None</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>None</td>
+                        <td>None</td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>None</td>
+                        <td>None</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>None</td>
+                        <td>None</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>None</td>
+                        <td>None</td>
+                    </tr>
+                    <tr>
+                        <td>21</td>
+                        <td>None</td>
+                        <td>None</td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td>None</td>
+                        <td>None</td>
+                    </tr>
+                    <tr>
+                        <td>23</td>
+                        <td>None</td>
+                        <td>None</td>
+                    </tr>
+                    <tr>
+                        <td>24</td>
+                        <td>None</td>
+                        <td>None</td>
+                    </tr>
+                    <tr>
+                        <td>25</td>
+                        <td>None</td>
+                        <td>None</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+        <div class="hide" id="piechart"></div>
+        <div class="hide" id="curve_chart"></div>
+    </main>
+    <button class="hide" id="exportBtn">Export to Excel</button>
+    <footer>
+        <a href="https://github.com/rodeatharva1000" target="_blank"><img src="github.svg" alt="GitHub"></a>
+        <a href="https://x.com/AtharvaRod71439?t=CtOMWCD85896-Gxs41sl4g&s=08 " target="_blank"><img src="twitter-x.svg"
+                alt="Twitter"></a>
+        <a href="https://www.linkedin.com/in/atharva-rode-95a6b5271?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"><img src="linkedin.svg" alt="Linkedin"></a>
+        <a href="mailto:rodeatharva2@gmail.com" target="_blank"><img src="envelope.svg" alt="Gmail"></a>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.3/xlsx.full.min.js"></script>
+</body>
+
+</html>

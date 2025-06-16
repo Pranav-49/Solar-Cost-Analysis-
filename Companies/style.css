@@ -1,0 +1,141 @@
+
+.faq-item {
+    margin-bottom: 20px;
+  }
+  
+  .question {
+    font-size: large;
+    cursor: pointer;
+    background-color: rgb(179, 177, 177);
+    padding: 1% 5%;
+    color: black;
+  }
+  
+  .answer {
+    display: none;
+    font-size: large;
+    padding: 1% 5%;
+    color: black;
+    background-color: rgb(211, 211, 211);
+  }
+  
+  .active {
+    display: block;
+  }
+  
+  #navbar {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    z-index: 100; 
+    padding: 1%;
+    padding-left: 275px;
+    color: black;
+    background-color: white;
+    margin-bottom: 15px;
+    width: 100vw;
+}
+#gap{
+  padding-left: 70px;
+
+}
+#logo {
+  width: 10vw;
+  filter: invert(100%);
+  padding: 0px;
+  position: absolute;
+  left: 110px;
+  top: 0px;
+}
+  body{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    color: white;
+  }
+  #heading{
+    margin-top: 100px;
+    margin-right: 20vw;
+  }
+  #main{
+    color: rgb(14, 191, 236);
+  }
+  h1{
+    padding-left: 28vw;
+    margin: 40px;
+    color: black;
+  }
+  a{
+    color: inherit;
+    text-decoration: none;
+  }
+  .companies{
+    margin-left: 15vw;
+  }
+  .name{
+    color: black;
+    font-size: 22px;
+    padding-left: 15px;
+  }
+ 
+  .companies p {
+    font-size: 25px;
+    padding-left: 150px; /* Adjust as needed */
+    padding-right: 200px; /* Adjust as needed */
+  }
+  .companies a{
+    font-size: 20px;
+    color: blue;
+  }
+  #ad{
+    padding-left: 50px;
+  }
+  #em{
+    padding-left: 40px;
+  }
+  #rs{
+    padding-left: 50px;
+    padding-top: 50px;
+  }
+  #we{
+    padding-left: 30px;
+    padding-top: 50px;
+  }
+  #jk{
+    padding-left: 60px;
+  }
+
+  .v_company{
+    margin-top: 20vh;
+    color: black;
+    display: flex;
+  }
+  #mid_head{
+    padding-left: 550px;
+  }
+  #logo_c{
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+  }
+  footer {
+    background-color: #1f1f1f;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  footer a:hover {
+    text-decoration: underline;
+  }
+  footer img {
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      margin-right: 10px;
+      filter: invert(100%);
+  }
